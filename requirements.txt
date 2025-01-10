@@ -1,0 +1,6 @@
+plotly
+langflow
+pandas
+requests
+dotenv
+streamlit
