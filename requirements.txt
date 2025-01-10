@@ -3,4 +3,3 @@ langflow
 pandas
 requests
 dotenv
-streamlit
