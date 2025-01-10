@@ -2,4 +2,4 @@ plotly
 langflow
 pandas
 requests
-dotenv
+python-dotenv
