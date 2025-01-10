@@ -64,11 +64,15 @@ with tabs[0]:
 
     # User inputs
     message = st.text_input("Message", "Type your message here...")
-    endpoint = st.text_input("Endpoint", FLOW_ID)
+    # endpoint = st.text_input("Endpoint", FLOW_ID)
+    endpoint = FLOW_ID
     output_type = st.selectbox("Output Type", ["chat", "json"])
     input_type = st.selectbox("Input Type", ["chat", "json"])
-    application_token = st.text_input("Application Token", APPLICATION_TOKEN, type="password")
+    # application_token = st.text_input("Application Token", APPLICATION_TOKEN, type="password")
+    application_token = APPLICATION_TOKEN
+    print(TWEAKS)
     tweaks = st.text_area("Tweaks (JSON)", json.dumps(TWEAKS, indent=2))
+    print("tweaks again ", tweaks)
 
     # Run API call on button click
     if st.button("Send Request"):
